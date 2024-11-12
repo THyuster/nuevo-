@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Utils;
+
+class TypesCharges
+{
+
+    public const ADMINISTRATOR_POSITION = 1; //ADMINISTRADOR
+    public const MAINTENANCE_MANAGER_POSITION   = 2;
+    public const UPM_DIRECTOR_POSITION = 3; //CARGO_DIRECTOR_UPM
+    public const MANAGER_POSITION = 4; //CARGO_GERENTE
+    public const ASSISTANT_POSITION = 5; //CARGO_AUXILIAR
+    public const USER_POSITION = 6; //CARGO_USUARIO
+    public const QUALITY_AUDITOR_POSITION = 7; //CARGO_AUDITOR_CALIDAD
+    public const GENERAL_DIRECTOR_POSITION = 8; //CARGO_DIRECTOR_GENERAL
+}

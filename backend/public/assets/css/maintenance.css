@@ -1,0 +1,36 @@
+.position-relative .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+.navbar-nav .dropdown > .dropdown-menu,
+.navbar-nav .position-relative > .dropdown-menu{
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s;
+}
+.navbar-nav .dropdown:hover > .dropdown-menu,
+.navbar-nav .position-relative:hover > .dropdown-menu{
+    opacity: 1;
+    visibility: visible;
+    transition: .5s;
+} 
+#MainMenu {
+            max-height: 250px;
+            overflow-y: auto;
+        }
+
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top:-6px;
+}
+
+#whiteSVG{
+    filter: invert(99%) sepia(0%) saturate(5476%) hue-rotate(183deg) brightness(116%) contrast(100%);
+    
+} 

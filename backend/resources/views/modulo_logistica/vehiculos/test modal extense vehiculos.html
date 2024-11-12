@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>el modal de thomas</title>
+</head>
+<body>
+    <div class="container mt-3" >
+        <button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#vehicles" role="button">Formulario de nuevo vehículo</button>
+    </div>        
+    <div class="modal fade" tabindex="-1" id="vehicles" aria-labelledby="devicesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable  modal-dialog-centered modal-xl">
+            <!-- Modal -->
+            <div class="modal-content">
+                <!-- Cabecera del modal -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Gestión de vehículos</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Cuerpo del modal -->
+                <div class="modal-body">
+                    <!-- Navegación de pestañas -->
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#pestaña1">Información general</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#pestaña2">Datos técnicos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#pestaña3">Galería</a>
+                        </li>
+                      </ul>
+                    <!-- Contenido de las pestañas -->
+                    <form action="" id="mainSpecs" class="form-control my-3">
+                    <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="pestaña1">
+                                <!--Contenido de la pestaña 1 -->
+                                <h5 class="text-center">Información conductor - operador</h5>
+                                <div class="row">
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-1">
+                                                    <input type="date" class="form-control" id="created_at" name="created_at" required>
+                                                    <label for="afiliacion">Afiliación</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-1">
+                                                    <input type="date" class="form-control" id="updated_at"name="updated_at" required>
+                                                    <label for="updated_at">Actualización</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-1">
+                                                    <input type="select" class="form-control" id="propietario_identificacion" name="propietario_identificacion" required>
+                                                    <label for="propietario_identificacion">ID propietario</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-1">
+                                                    <input type="select" class="form-control" id="propietario_apellidos" name="propietario_apellidos" required>
+                                                    <label for="propietario_apellidos">Apellidos </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-1">
+                                                    <input type="text" class="form-control" id="propietario_nombres" name="propietario_nombres" required>
+                                                    <label for="propietario_nombres">Nombres</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-1">
+                                                    <input type="text" class="form-control" id="propietario_telefono"
+                                                    name="propietario_telefono" required>
+                                                    <label for="propietario_telefono">Telefono</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-1">
+                                                    <input type="text" class="form-control" id="propietario_email"
+                                                        name="propietario_email" required>
+                                                    <label for="propietario_email">Correo electrónico</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-1">
+                                                    <input type="date" class="form-control" id="Operacion" name="Operacion" required>
+                                                    <label for="Operacion"> fecha Operacion</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-1">
+                                                    <input type="date" class="form-control" id="desvinculacion"name="desvinculacion" required>
+                                                    <label for="desvinculacion">Desvinculación</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-1">
+                                                    <input type="text" class="form-control" id="conductorid" name="conductorid" required>
+                                                    <label for="conductorid">ID Conductor</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-1">
+                                                    <input type="text" class="form-control" id="Apellidos" name="Apellidos" required>
+                                                    <label for="Apellidos">Apellidos</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-1">
+                                                    <input type="text" class="form-control" id="nombres" name="nombres" required>
+                                                    <label for="nombres">Nombres</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-1">
+                                                    <input type="text" class="form-control" id="telefono"
+                                                    name="telefono" required>
+                                                    <label for="telefono">Telefono</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-1">
+                                                    <input type="text" class="form-control" id="email"
+                                                        name="email" required>
+                                                    <label for="email">Correo electrónico</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <h5 class="text-center">Matrícula</h5>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="form-floating mb-1">
+                                            <input type="text" class="form-control" id="NoMatricula" name="NoMatricula" required>
+                                            <label for="NoMatricula">No. de matricula</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="form-floating mb-1">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="vehiculo_propio">
+                                                <label class="form-check-label" for="vehiculo_propio">
+                                                    Propio
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="vehiculo_modificado">
+                                                <label class="form-check-label" for="vehiculo_modificado">
+                                                    Modificado
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-floating mb-1">
+                                            <select class="form-select" id="clase_vehiculo" aria-label="vehiculo_clase select">
+                                                <option value="1">Automovil</option>
+                                                <option value="2">Camión</option>
+                                            </select>
+                                            <label for="vehiculo_clase">clase vehiculo</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-floating mb-1">
+                                            <select class="form-select" id="tipo_contrato" aria-label="tipo_contrato select">
+                                                <option value="1">mensual</option>
+                                                <option value="2">anual</option>
+                                            </select>
+                                            <label for="tipo_contrato">tipo de contrato</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-floating mb-1">
+                                            <select class="form-select" id="combustible" aria-label="gasolina select">
+                                                <option value="1">Gasolina</option>
+                                                <option value="2">Diesel</option>
+                                            </select>
+                                            <label for="combustible">combustible</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-floating mb-1">
+                                            <select class="form-select" id="blindaje" aria-label="Default select">
+                                                <option value="1">I</option>
+                                                <option value="2">II</option>
+                                            </select>
+                                            <label for="blindaje">blindaje</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-floating mb-1">
+                                            <select class="form-select" id="ejes" aria-label="ejes select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                            </select>
+                                            <label for="ejes">ejes</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                            <div class="tab-pane fade" id="pestaña2">
+                                <!--Contenido de la pestaña 2 -->
+                                <h5 class="text-center">Datos del vehículo</h5>
+                                <div class="row ">
+                                    <div class="col-3">
+                                        <div class="form-floating mb-1">
+                                            <input type="text" class="form-control" id="vehiculo_placa"
+                                                name="vehiculo_placa" required>
+                                            <label for="vehiculo_placa">placa</label>
+                                        </div>
+                                        <div class="form-floating mb-1">
+                                            <input type="text" class="form-control" id="vehiculo_marca"
+                                                name="vehiculo_marca" required>
+                                            <label for="vehiculo_marca">marca</label>
+                                        </div>
+                                        <div class="form-floating mb-1">
+                                            <input type="text" class="form-control" id="vehiculo_modelo"
+                                                name="vehiculo_modelo" required>
+                                            <label for="vehiculo_modelo">modelo</label>
+                                        </div>
+                                        <div class="form-floating mb-1">
+                                            <input type="text" class="form-control" id="vehiculo_linea"
+                                                name="vehiculo_linea" required>
+                                            <label for="vehiculo_linea">linea</label>
+                                        </div>
+                                        <div class="form-floating mb-1">
+                                            <input type="text" class="form-control" id="vehiculo_color"
+                                                name="vehiculo_color" required>
+                                            <label for="vehiculo_color">color</label>
+                                        </div>
+                                        <div class="form-floating mb-1">
+                                            <input type="text" class="form-control" id="vehiculo_serial_motor"
+                                                name="vehiculo_serial_motor" required>
+                                            <label for="vehiculo_serial_motor">serial motor</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-floating mb-1">
+                                            <input type="text" class="form-control" id="vehiculo_serial_chasis" name="vehiculo_serial_chasis" required>
+                                            <label for="vehiculo_serial_chasis">Serial chasis</label>
+                                        </div>
+                                        <div class="form-floating mb-1">
+                                            <input type="text" class="form-control" id="gps_empresa" name="gps_empresa" required>
+                                            <label for="gps_empresa">GPS empresa</label>
+                                        </div>
+                                        <div class="form-floating mb-1">
+                                            <input type="text" class="form-control" id="gps_usuario" name="gps_usuario" required>
+                                            <label for="gps_usuario">GPS usuario</label>
+                                        </div>
+                                        <div class="form-floating mb-1">
+                                            <input type="text" class="form-control" id="gps_password" name="gps_password" required>
+                                            <label for="gps_password">GPS password</label>
+                                        </div>
+                                        <div class="form-floating mb-1">
+                                            <input type="text" class="form-control" id="gps_id" name="gps_id" required>
+                                            <label for="gps_id">GPS id</label>
+                                        </div>
+                                        <div class="form-floating mb-1">
+                                            <input type="text" class="form-control" id="gps_numero" name="gps_numero" required>
+                                            <label for="gps_numero">GPS numero</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-floating mb-1">
+                                            <textarea class="form-control" value="observacion" name="observacion" id="observacion"></textarea>
+                                        <label for="observacion">Observaciones</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="C:\Users\edwar.erp\Downloads\pngwing.com.png" alt="imagen" style="max-height: 150px;">
+                                    </div>
+                                </div>
+                                <hr>
+                                <h5 class="text-center">Datos técnicos vehículo</h5>
+                                <div class="row">
+                                    <div class="col-3 mt-3">
+                                        <div class="form-floating mb-1">
+                                            <input type="text" class="form-control" id="soat_empresa" name="soat_empresa" required>
+                                            <label for="soat_empresa">SOAT empresa</label>
+                                        </div>
+                                        <div class="form-floating mb-1">
+                                            <input type="text" class="form-control" id="soat_valor" name="soat_valor" required>
+                                            <label for="soat_valor">SOAT valor</label>
+                                        </div>
+                                        <div class="form-floating mb-1">
+                                            <input type="date" class="form-control" id="soat_ini" name="soat_ini" required>
+                                            <label for="soat_ini">Fecha inicial</label>
+                                        </div>
+                                        <div class="form-floating mb-1">
+                                            <input type="date" class="form-control" id="soat_fin" name="soat_fin" required>
+                                            <label for="soat_fin">fecha final</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 mt-3">
+                                        <div class="form-floating mb-1">
+                                            <input type="text" class="form-control" id="gases_empresa" name="gases_empresa" required>
+                                            <label for="gases_empresa">gases empresa</label>
+                                        </div>
+                                        <div class="form-floating mb-1">
+                                            <input type="text" class="form-control" id="gases_valor" name="gases_valor" required>
+                                            <label for="gases_valor">gases valor</label>
+                                        </div>
+                                        <div class="form-floating mb-1">
+                                            <input type="date" class="form-control" id="gases_ini" name="gases_ini" required>
+                                            <label for="gases_ini">Fecha inicial</label>
+                                        </div>
+                                        <div class="form-floating mb-1">
+                                            <input type="date" class="form-control" id="gases_fin" name="gases_fin" required>
+                                            <label for="gases_fin">fecha final</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 mt-3">
+                                        <div class="form-floating mb-1">
+                                            <input type="text" class="form-control" id="seguro_empresa" name="seguro_empresa" required>
+                                            <label for="seguro_empresa">seguro empresa</label>
+                                        </div>
+                                        <div class="form-floating mb-1">
+                                            <input type="text" class="form-control" id="seguro_valor" name="seguro_valor" required>
+                                            <label for="seguro_valor">seguro valor</label>
+                                        </div>
+                                        <div class="form-floating mb-1">
+                                            <input type="date" class="form-control" id="seguro_ini" name="seguro_ini" required>
+                                            <label for="seguro_ini">Fecha inicial</label>
+                                        </div>
+                                        <div class="form-floating mb-1">
+                                            <input type="date" class="form-control" id="seguro_fin" name="seguro_fin" required>
+                                            <label for="seguro_fin">fecha final</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 mt-3">
+                                        <div class="form-floating mb-1">
+                                            <input type="text" class="form-control" id="cilindraje" name="cilindraje" required>
+                                            <label for="cilindraje">cilindraje</label>
+                                        </div>
+                                        <div class="form-floating mb-1">
+                                            <input type="text" class="form-control" id="tara" name="tara" required>
+                                            <label for="tara">tara vehiculo</label>
+                                        </div>
+                                        <div class="form-floating mb-1">
+                                            <input type="text" class="form-control" id="pasajeros" name="pasajeros" required>
+                                            <label for="pasajeros">pasajeros</label>
+                                        </div>
+                                        <div class="form-floating mb-1">
+                                            <input type="text" class="form-control" id="km_ini" name="km_ini" required>
+                                            <label for="km_ini">kilometraje inicial</label>
+                                        </div>
+                                        <div class="form-floating mb-1">
+                                            <input type="text" class="form-control" id="trailer_id" name="trailer_id" required>
+                                            <label for="trailer_id">trailer</label>
+                                        </div>
+                                        <div class="form-floating mb-1">
+                                            <input type="text" class="form-control" id="trailer_modelo" name="trailer_modelo" required>
+                                            <label for="trailer_modelo">trailer - modelo</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pestaña3">
+                            
+                                <!--Contenido de la pestaña 3 -->
+
+                            </div>
+                        </div>
+                    </form>
+                    <!-- Pie del modal -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary" id="btnSaveDevice">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script>
+    // Obtener las pestañas y los contenidos correspondientes
+var tabs = document.querySelectorAll('.nav-tabs .nav-link');
+var tabContents = document.querySelectorAll('.tab-content .tab-pane');
+
+// Agregar un evento de clic a cada pestaña
+tabs.forEach(function(tab) {
+tab.addEventListener('click', function(e) {
+e.preventDefault();
+
+// Remover la clase 'active' de todas las pestañas y contenidos
+tabs.forEach(function(tab) {
+tab.classList.remove('active');
+});
+tabContents.forEach(function(content) {
+content.classList.remove('show', 'active');
+});
+
+// Agregar la clase 'active' a la pestaña clickeada y mostrar su contenido correspondiente
+this.classList.add('active');
+var target = this.getAttribute('href');
+document.querySelector(target).classList.add('show', 'active');
+});
+});
+</script>
+</body>
+</html>
+
+
+
+
+<!---  <h5 class="text-center uppercase">Propietario</h5>
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="form-floating mb-1">
+                                        <input class="form-control" type="text" id="propietario_id"
+                                            list="datalistPropietario_id" name="propietario_id">
+                                        <datalist id="datalistPropietario_id">
+                                            <option value="1093292428 - thomas mauricio rodriguez">
+                                        </datalist>
+                                        <label for="propietario_id">Propietario</label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-floating mb-1">
+                                        <input type="select" class="form-control" id="apellidos_propietario"
+                                            name="apellidos_propietario" readonly>
+                                        <label for="apellidos_propietario">Apellidos </label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-floating mb-1">
+                                        <input type="text" class="form-control" id="nombres_propietario" name="nombres_propietario" readonly>
+                                        <label for="nombres_propietario">Nombres</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-floating mb-1">
+                                        <input type="text" class="form-control" id="movil_propietario" name="movil_propietario" readonly>
+                                        <label for="movil_propietario">Telefono</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-floating mb-1">
+                                        <input type="text" class="form-control" id="email_propietario" name="email_propietario" readonly>
+                                        <label for="email_propietario">Correo electrónico</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <h5 class="text-center uppercase">Conductor</h5>
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="form-floating mb-1">
+                                        <input class="form-control" list="datalistConductor_id" id="conductor_id"
+                                            name="conductor_id">
+                                        <datalist id="datalistConductor_id">
+                                            <option value="1093292428">
+                                        </datalist>
+                                        <label for="conductor_id">ID Conductor</label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-floating mb-1">
+                                        <input type="text" class="form-control" id="apellidos_conductor"
+                                            name="apellidos_conductor" readonly disabled>
+                                        <label for="apellidos_conductor">Apellidos</label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-floating mb-1">
+                                        <input type="text" class="form-control" id="nombres_conductor"
+                                            name="nombres_conductor" readonly disabled>
+                                        <label for="nombres_conductor">Nombres</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-floating mb-1">
+                                        <input type="text" class="form-control" id="movil_conductor"
+                                            name="movil_conductor" readonly disabled>
+                                        <label for="movil_conductor">Telefono</label>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="form-floating mb-1">
+                                        <input type="text" class="form-control" id="email_conductor"
+                                            name="email_conductor" readonly disabled>
+                                        <label for="email_conductor">Correo electrónico</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>--->
